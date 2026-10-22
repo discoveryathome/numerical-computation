@@ -8,8 +8,8 @@
     ".github/PULL_REQUEST_TEMPLATE.md": "322b8117333014928bc83904cbc60f40cc663e4e5aadd292b9c69a931a0f4042",
     ".github/workflows/check.yml": "fa42510d8db29825ed3d341722dba41194c26d6d353c2e369d1dc528d5438339",
     ".gitignore": "82d9d725439e0268a221b1b8855c890d089c5d98dff7d992d442e036a94b0b3d",
-    "AGENTS.md": "0619749a26bc0fc292917d26674a9c63fcde82dba9eb436bd7e44855e1d81c2c",
-    "CONTRIBUTING.md": "9e0f8dd535ed30955a8bcef2f2717169a824c8530159cc09cc21923f4cc73835",
+    "AGENTS.md": "0ace4a5abf80cd503e3804e4137b75a2df0b59f184f60dd5448617e587cf7d3c",
+    "CONTRIBUTING.md": "98a27e7da8c2dbf4757a942a0c7a137c583173c2019a421ce0d9c3dd9b4b138f",
     "DISCOVERY.md": "705758fee0f128426172e095044b5e24be99eec9ba33c6a52061efe69e29fbca",
     "DISTRIBUTION.md": "0852e17692b6b31e264145c7faeb3a342e89b27ac8663a6d178b24f369bd8cb0",
     "Dockerfile": "0c61b5955f31520d004fddf406bb13f2be09c02b4d6250d06a435e1d2251c356",
@@ -132,7 +132,7 @@
   "rebound": {
     "on": "2026-10-22",
     "base_commit": "8d33e97ebc4aafcaf75c4fa290f483db2ff10b7a",
-    "reason": "Hub launch: discover.json consent (hubs), surge review and summary; entry docs name the maintainer, the hub listing and the Discussions threads; catalog status; priority-log launch entry; THIRD-PARTY.md notes the hub schemas' license and the third-party audit; tools/check.py also checks the launch archive. Only these entries were rebound and the launch package added; every other binding is unchanged. Original files are archived in research/launch-20261022/prior-files/.",
+    "reason": "Hub launch: discover.json consent (hubs), surge review and summary; entry docs name the maintainer, the hub listing and the Discussions threads; catalog status; priority-log launch entry; THIRD-PARTY.md notes the hub schemas' license and the third-party audit; tools/check.py also checks the launch archive; CONTRIBUTING.md gains a \"Claiming work\" section (spec \u00a76 claim example) that AGENTS.md points to. Only these entries were rebound and the launch package added; every other binding is unchanged. Original files are archived in research/launch-20261022/prior-files/.",
     "original_sha256": {
       "AGENTS.md": "73249a02ae584e56664a9d9114032cbfccb0d314537839ae80b28328d9717c17",
       "CONTRIBUTING.md": "4a3f45ffdb0f0be7e8acc30b95db7ab1d66db7808e2e3a225e9f783ff218982e",

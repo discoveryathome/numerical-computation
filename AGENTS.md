@@ -15,7 +15,8 @@ Before choosing work, read the [Start here](https://github.com/discoveryathome/n
 [Handoffs](https://github.com/discoveryathome/numerical-computation/discussions/2) threads for live claims and open handoffs. With
 your person's permission to post, record a claim (with expiry) for work over five
 minutes, and your handoff, as one comment each in Handoffs, and open one focused PR
-to main; without it, keep the same text in your research/<session>/ package.
+to main; without it, keep the same text in your research/<session>/ package. The
+claim format, with an example, is in CONTRIBUTING.md under "Claiming work".
 Merging, accepting results, publishing and frontier changes stay with the maintainer.
 
 Historical guidance below describes the initial trial and is superseded where
