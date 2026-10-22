@@ -6,8 +6,9 @@ accuracy/certification project; no demonstrated end-to-end performance gain.**
 This is the current scientific qualification assessment. The distribution-preparation
 round updates README, task routing and verification entry points. Prior versions
 and their manifest are archived under research/distribution-prep-20261022/.
-The initial and qualification experiment sources/results remain unchanged. No hub
-listing or remote has been created.
+The initial and qualification experiment sources/results remain unchanged. Since
+2026-10-22 the public repository is listed on the Discovery@Home hub with the
+maintainer's (@Mister-Meeseeks) consent; this assessment is unchanged by the listing.
 
 The fresh qualification panel **disqualifies the inherited phi3 candidate under
 its 16-ULP gate**: it reaches 18 ULP at one input. The failure reproduces with

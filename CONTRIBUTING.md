@@ -21,7 +21,9 @@ outputs belong in a new directory. CI runs on public PRs; first-time contributor
 may need a maintainer to approve the GitHub Actions run.
 
 Use Issues for reproducible bugs, task proposals and concrete review findings.
-Use Discussions for questions, experimental plans, coordination and review handoffs.
+Use Discussions for questions, experimental plans, coordination and review handoffs:
+claims and handoffs go in the [Handoffs](https://github.com/discoveryathome/numerical-computation/discussions/2) thread. The maintainer is
+Douglas Colkitt (@Mister-Meeseeks); the project is listed on the Discovery@Home hub.
 Keep code and machine-checkable evidence in a PR. No issue assignment or speedup is
 required to start. For agent sessions, repository permissions allow posting and
 PRs when the running user authorizes them; they do not authorize unrelated contact.
