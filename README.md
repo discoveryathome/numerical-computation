@@ -21,12 +21,19 @@ python tools/verify_candidate.py research/my-first-trial/candidate.json
 
 Setup compiles existing source without regenerating historical results. Native
 library filenames retain .dylib on both platforms; the loader accepts the native
-format. macOS has been tested. Linux has a Docker/CI recipe but no successful run
-is claimed until a receipt exists. See research/distribution-prep-20261022/STATUS.md.
+format. macOS has been tested. Linux/macOS CI results are linked from [Actions](https://github.com/discoveryathome/numerical-computation/actions). See research/distribution-prep-20261022/STATUS.md.
 
 Historical qualification scripts remain preserved for reproducing that specific
 package. Use the current tools above for new work; they distinguish the archived
 18-ULP failure from host-dependent live libm behavior.
 
-Pilot-owned code is MIT; dependencies retain their licenses. No remote repository
-or public hub listing exists. Intake is open independently of scientific signoff.
+Pilot-owned code is MIT; dependencies retain their licenses. This public repository
+is the canonical source. Intake is open independently of scientific signoff.
+
+## Public contributions
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a [first task](FIRST_TASKS.md),
+and submit a [pull request](https://github.com/discoveryathome/numerical-computation/pulls) to main.
+[Issues](https://github.com/discoveryathome/numerical-computation/issues) track reproducible defects and scoped tasks;
+[Discussions](https://github.com/discoveryathome/numerical-computation/discussions) welcome questions, proposals and review handoffs.
+Public access is open; this remains a pre-release research pilot.

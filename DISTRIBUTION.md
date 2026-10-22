@@ -9,8 +9,9 @@ exposed; read EVALUATION.md before claiming fresh evaluation.
 Use tools/make_release.py --out <directory-outside-repo> from a clean commit to
 produce a source archive, Git bundle and hashed receipt. Native binaries, virtual
 environments and upstream dependency sources are excluded. Dependencies are
-installed under their own terms. Share through the coordinator; there is no
-configured public posting destination or remote.
+installed under their own terms. The canonical public repository is
+https://github.com/discoveryathome/numerical-computation. Submit handoffs through its PRs or discussions;
+see CONTRIBUTING.md.
 
 The bound is author-derived and awaits independent review. The original phi3
 candidate is disqualified under its advertised 16-ULP gate. Frozen evidence is

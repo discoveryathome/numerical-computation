@@ -4,7 +4,7 @@ Read README.md, QUALIFICATION.md, FIRST_TASKS.md and EVALUATION.md first.
 Run tools/setup.sh, tools/check.py and tools/pick.py. The inherited phi3 candidate
 is disqualified under the 16-ULP gate. Use the new piecewise implementation for
 bound audits; do not treat general hyp1f1 speed as a specialized frontier record.
-Local contributions and expert-agent reviews are open. Preserve failures and
+Public contributions and expert-agent reviews are open. Preserve failures and
 historical trial artifacts. Write new sessions under research/<session>/ and
 verify each candidate. Independent scientific acceptance remains pending.
 
@@ -13,7 +13,7 @@ it points to obsolete candidates or setup commands.
 
 # Reliable numerical computation: contributor workflow
 
-Intake is open for local contributions and expert-agent assistants. Start with
+Intake is open for public contributions and expert-agent assistants. Start with
 `python tools/check.py --quick` and the seeded task picker. Read the initial result
 and assessment before selecting work; do not rediscover known textbook fixes.
 
@@ -33,3 +33,6 @@ Scientific acceptance requires a scoped review by someone other than the author.
 Expert-agent review is welcome now; no automatic human expertise or independent
 signoff is inferred. Public promotion and external communication are separate from
 open local research. See PARTICIPATION.md.
+
+Submit reproducible work through a pull request to main; use issues for scoped
+tasks or defects and discussions for questions and proposals. See CONTRIBUTING.md.
