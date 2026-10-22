@@ -1,44 +1,32 @@
 # Reliable numerical computation
 
-Accuracy versus cost for scalar phi functions; sampled candidate verification. **Open for local pre-release trials and expert-agent reviews.**
+**Open for pre-release contributions and expert review.** Current focus: checked
+accuracy bounds and useful numerical workloads. No end-to-end speedup or novel
+approximation algorithm has been established.
 
-Read [the assessment](research/ASSESSMENT.md) and [the contribution guide](DISCOVERY.md).
-The initial author-run trial is complete in `results/trial.json`. It establishes
-only the specific measurements recorded there, not novelty or external signoff.
-
-## Start
-
-Requires macOS/Apple Clang, Python 3.12 and `uv`; other platforms need a native
-library suffix/build adjustment and fresh validation. From this directory:
+Read [current qualification](QUALIFICATION.md), [first tasks](FIRST_TASKS.md),
+[distribution instructions](DISTRIBUTION.md), and [evaluation rules](EVALUATION.md).
+The inherited phi3 candidate failed its 16-ULP gate (18 ULP on the recorded Mac).
+The new piecewise candidate has an author-derived <=4-ULP bound under explicit
+IEEE assumptions, pending independent review. Historical results remain archived.
 
 ```sh
 sh tools/setup.sh
 source .venv/bin/activate
 python tools/check.py
-python tools/pick.py --seed 42
+python tools/pick.py --task replication
+python tools/contribute.py --order 3 --seed 419 --out research/my-first-trial
+python tools/verify_candidate.py research/my-first-trial/candidate.json
 ```
 
-The original local run used the shared environment at `../.venv`. Every trial is
-replayable with `python src/trial.py`; run in a copy or new worktree, because replay
-writes new results and timings. The integrity check intentionally detects altered
-frozen trial artifacts. Save new proposals in separate research packages.
+Setup compiles existing source without regenerating historical results. Native
+library filenames retain .dylib on both platforms; the loader accepts the native
+format. macOS has been tested. Linux has a Docker/CI recipe but no successful run
+is claimed until a receipt exists. See research/distribution-prep-20261022/STATUS.md.
 
-`discover.json` uses this local repository's `file:` URI and an empty hub list.
-No GitHub repository or public listing was created. Before publishing, assign the
-real canonical remote and review source/data notices.
+Historical qualification scripts remain preserved for reproducing that specific
+package. Use the current tools above for new work; they distinguish the archived
+18-ULP failure from host-dependent live libm behavior.
 
-- [Participation](PARTICIPATION.md)
-- [Protocol](research/PROTOCOL.md)
-- [Sources](research/sources.json)
-- [Review record](research/review.json)
-- [Handoff template](research/HANDOFF_TEMPLATE.md)
-
-Pilot-owned code is MIT; third-party code/data retain the terms in THIRD-PARTY.md.
-
-Verify an individual handoff without rerunning the search:
-
-```sh
-python tools/verify_candidate.py results/example-candidate.json
-```
-
-The JSON examples specify the certificate shape. Passing certifies only the supplied inputs and outputs, not novelty or whole-domain correctness.
+Pilot-owned code is MIT; dependencies retain their licenses. No remote repository
+or public hub listing exists. Intake is open independently of scientific signoff.

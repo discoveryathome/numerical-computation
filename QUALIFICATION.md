@@ -3,10 +3,11 @@
 **Open for bounded pre-release contributions and expert review. Promising as an
 accuracy/certification project; no demonstrated end-to-end performance gain.**
 
-This is the current qualification assessment. The original README, discovery
-metadata, initial trial and its manifest remain frozen historical artifacts.
-Their initial sampled-pass statement must be read with the correction below;
-this round does not update a hub listing or create a remote.
+This is the current scientific qualification assessment. The distribution-preparation
+round updates README, task routing and verification entry points. Prior versions
+and their manifest are archived under research/distribution-prep-20261022/.
+The initial and qualification experiment sources/results remain unchanged. No hub
+listing or remote has been created.
 
 The fresh qualification panel **disqualifies the inherited phi3 candidate under
 its 16-ULP gate**: it reaches 18 ULP at one input. The failure reproduces with
@@ -37,11 +38,12 @@ Start here:
 On the qualified macOS/Apple Clang/Python 3.12 environment, with `uv` installed:
 
 ```sh
-bash research/qualification-20261022/setup.sh
+sh tools/setup.sh
+.venv/bin/python tools/check.py
 ```
 
-This installs the pinned dependencies, builds the frozen original C source and
-the certificate-verified new source, checks both packages, and runs 17 tests.
+These commands install pinned dependencies, build both frozen C sources,
+check current and historical identities, and run the current test suite.
 It does not regenerate the original trial or overwrite either experiment.
 
 To repeat timing/accuracy evaluation, use a new output directory:

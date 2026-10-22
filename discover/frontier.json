@@ -1,29 +1,25 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Three scalar phi candidates pass sampled 16-ULP gates, including 24,408 fresh stress samples; speed/accuracy tradeoff, no whole-domain guarantee.",
+  "statement": "Inherited phi3 failed the 16-ULP gate; piecewise candidate observed <=2 ULP and has an author-derived <=4-ULP bound, pending review. No demonstrated end-to-end speedup.",
   "status": "Local author-run trial complete; open for contributions and expert-agent review; scientific acceptance pending.",
   "evidence_level": [
     "author-checked"
   ],
-  "scope": "Only the pinned source, explicit domains, sampled workloads and machine in this package; timing noise and baseline limitations are documented.",
+  "scope": "Finite binary64 [-4,4], orders 1\u20133, IEEE assumptions in qualification BOUND.md; timing evidence is machine-specific.",
   "review": "research/review.json",
   "updated_on": "2026-10-22",
   "artifacts": [
     {
-      "path": "results/trial.json",
-      "sha256": "658b9806634a8e666f9afc1819d7742216b4c82bbf2540f205643cc8feb9960c"
+      "path": "research/qualification-20261022/run-01/results.json",
+      "sha256": "833abed9f4040c49353959a004890cebb36dfc3e93a135dd90b298c59c0915cd"
     },
     {
-      "path": "src/trial.py",
-      "sha256": "ecbd9c83474c3fa8cb0f0fe91a0f4b269b7e814950ed9af6db8716297d0a4b29"
-    },
-    {
-      "path": "results/robustness.json",
-      "sha256": "69fbacea06ad9f9d7c482dba692f654d2abb4f9b1f53da36d6f7b6cb876f6c22"
+      "path": "research/qualification-20261022/counterexample.json",
+      "sha256": "ec966f14aed03623047eac1d87d28009549abc478f62c9a2d1f4f56cb995c287"
     }
   ],
   "reproduce": "python tools/check.py",
-  "reproduce_full": "python src/trial.py (in a copy; writes new results)",
+  "reproduce_full": "python research/qualification-20261022/qualify.py --output research/new-replay",
   "assumptions": [
     {
       "id": "review",

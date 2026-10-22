@@ -1,3 +1,16 @@
+# Current entry point
+
+Read README.md, QUALIFICATION.md, FIRST_TASKS.md and EVALUATION.md first.
+Run tools/setup.sh, tools/check.py and tools/pick.py. The inherited phi3 candidate
+is disqualified under the 16-ULP gate. Use the new piecewise implementation for
+bound audits; do not treat general hyp1f1 speed as a specialized frontier record.
+Local contributions and expert-agent reviews are open. Preserve failures and
+historical trial artifacts. Write new sessions under research/<session>/ and
+verify each candidate. Independent scientific acceptance remains pending.
+
+Historical guidance below describes the initial trial and is superseded where
+it points to obsolete candidates or setup commands.
+
 # Reliable numerical computation: contributor workflow
 
 Intake is open for local contributions and expert-agent assistants. Start with

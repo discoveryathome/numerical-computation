@@ -1,138 +1,146 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
+  "priority_revision": 2,
   "assessed_on": "2026-10-22",
   "status": "Open for local pre-release trials and expert-agent review",
   "tracks": [
     {
-      "id": "optimization",
-      "weight": 35,
-      "tasks": [
-        {
-          "id": "optimization",
-          "question": "Can a candidate improve the verified accuracy/cost or correctness/cost tradeoff beyond the inherited baseline?",
-          "starting_points": [
-            "results/trial.json",
-            "src/trial.py"
-          ],
-          "methods": [
-            "bounded experiment",
-            "reproduction",
-            "scoped review"
-          ],
-          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
-          "first_step": {
-            "command": [
-              "python",
-              "tools/check.py",
-              "--quick"
-            ],
-            "expected": "Source/data/schema integrity passes; intake open."
-          },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Define a new candidate or parameter family before running it; preserve every attempted result.",
-          "scope_change_triggers": [
-            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "verification",
+      "id": "replication",
       "weight": 25,
       "tasks": [
         {
-          "id": "verification",
-          "question": "Can adversarial inputs or a separate checker expose a false acceptance or domain gap?",
+          "id": "replication",
+          "question": "Reproduce the current piecewise candidate on a fresh sampled panel",
           "starting_points": [
-            "tests/",
-            "src/trial.py"
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
           ],
           "methods": [
             "bounded experiment",
             "reproduction",
             "scoped review"
           ],
-          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "acceptance_gate": "candidate.json and handoff.json; run tools/verify_candidate.py. No improvement is required, and this is not an all-input proof.",
           "first_step": {
             "command": [
               "python",
               "tools/check.py",
               "--quick"
             ],
-            "expected": "Source/data/schema integrity passes; intake open."
+            "expected": "Current source and evidence identities pass; intake open."
           },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Minimize one genuine boundary case or document a scoped audit against an independent oracle.",
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/contribute.py --order 3 --seed 419 --out research/my-first-trial",
           "scope_change_triggers": [
-            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
-          ]
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "30 minutes; 261 sampled inputs"
         }
       ]
     },
     {
-      "id": "workloads",
+      "id": "bound-audit",
       "weight": 25,
       "tasks": [
         {
-          "id": "workloads",
-          "question": "Does the result transfer to a useful, independently motivated workload?",
+          "id": "bound-audit",
+          "question": "Audit one step of the conditional 4-ULP argument",
           "starting_points": [
-            "research/ASSESSMENT.md",
-            "research/sources.json"
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
           ],
           "methods": [
             "bounded experiment",
             "reproduction",
             "scoped review"
           ],
-          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "acceptance_gate": "A scoped review of BOUND.md against bounds.py plus a reproducer or explicit assumptions. Source regeneration alone does not establish independent mathematical review.",
           "first_step": {
             "command": [
               "python",
               "tools/check.py",
               "--quick"
             ],
-            "expected": "Source/data/schema integrity passes; intake open."
+            "expected": "Current source and evidence identities pass; intake open."
           },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Add provenance and freeze a genuinely fresh workload before candidate tuning.",
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python -m pytest -q tests/test_qualification.py",
           "scope_change_triggers": [
-            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
-          ]
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "60 minutes; choose coefficient tails, range reduction, Horner rounding, or ULP conversion"
         }
       ]
     },
     {
-      "id": "expert-review",
-      "weight": 15,
+      "id": "coefficient-workload",
+      "weight": 25,
       "tasks": [
         {
-          "id": "expert-review",
-          "question": "Are the baseline, headroom and claimed practical contribution scientifically credible?",
+          "id": "coefficient-workload",
+          "question": "Test joint coefficient construction on a motivated workload",
           "starting_points": [
-            "research/ASSESSMENT.md",
-            "research/review.json"
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
           ],
           "methods": [
             "bounded experiment",
             "reproduction",
             "scoped review"
           ],
-          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "acceptance_gate": "Use a production workload with a measured bottleneck and an equally fused baseline. Keep fixed-step caching. Report coefficient accuracy and complete integration cost; a null bottleneck result is useful.",
           "first_step": {
             "command": [
               "python",
               "tools/check.py",
               "--quick"
             ],
-            "expected": "Source/data/schema integrity passes; intake open."
+            "expected": "Current source and evidence identities pass; intake open."
           },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Review the exact commit; distinguish agent review from human expert signoff and author work from independent review.",
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/check.py --quick",
           "scope_change_triggers": [
-            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
-          ]
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "60 minutes initial profiling; freeze any larger experiment before tuning"
+        }
+      ]
+    },
+    {
+      "id": "portability",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "portability",
+          "question": "Check the arithmetic environment on another architecture",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Record compiler/flags/architecture, bound tests and live inherited-counterexample output. The historical 18-ULP value is a recorded fact, not a requirement imposed on a different libm.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/check.py",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "45 minutes including setup"
         }
       ]
     }

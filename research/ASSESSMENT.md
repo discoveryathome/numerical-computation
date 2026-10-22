@@ -1,3 +1,5 @@
+> Historical initial assessment. For the current scientific assessment read ../QUALIFICATION.md (repository root); for contributor routing read distribution-prep-20261022/STATUS.md. The inherited phi3 candidate has since failed its accuracy gate.
+
 # Assessment: numerical computation
 
 **Recommendation: promising second pilot, framed as numerical reliability and
