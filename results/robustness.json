@@ -1,0 +1,48 @@
+{
+  "kind": "post-selection fresh-seed and dense branch-boundary probe",
+  "seed": 2026102299,
+  "elapsed_seconds": 8.084702968597412,
+  "selection_changed": false,
+  "results": {
+    "1": {
+      "samples": 8136,
+      "candidate": {
+        "mode": 9,
+        "name": "d6_t0.015625",
+        "degree": 6,
+        "threshold": 0.015625
+      },
+      "max_ulp": 1,
+      "over_16_ulp": 0,
+      "max_relative": 2.2195360482137037e-16,
+      "witnesses": []
+    },
+    "2": {
+      "samples": 8136,
+      "candidate": {
+        "mode": 23,
+        "name": "d10_t0.25",
+        "degree": 10,
+        "threshold": 0.25
+      },
+      "max_ulp": 6,
+      "over_16_ulp": 0,
+      "max_relative": 1.019663325152909e-15,
+      "witnesses": []
+    },
+    "3": {
+      "samples": 8136,
+      "candidate": {
+        "mode": 30,
+        "name": "d12_t0.5",
+        "degree": 12,
+        "threshold": 0.5
+      },
+      "max_ulp": 16,
+      "over_16_ulp": 0,
+      "max_relative": 2.3401423951103054e-15,
+      "witnesses": []
+    }
+  },
+  "passes_sampled_gate": true
+}

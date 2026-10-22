@@ -1,0 +1,20 @@
+{
+  "1": {
+    "mode": 9,
+    "name": "d6_t0.015625",
+    "degree": 6,
+    "threshold": 0.015625
+  },
+  "2": {
+    "mode": 23,
+    "name": "d10_t0.25",
+    "degree": 10,
+    "threshold": 0.25
+  },
+  "3": {
+    "mode": 30,
+    "name": "d12_t0.5",
+    "degree": 12,
+    "threshold": 0.5
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "retrieved_on": "2026-10-22",
+  "sources": [
+    {
+      "title": "Herbie: automatically improving floating-point accuracy",
+      "url": "https://github.com/herbie-fp/herbie",
+      "role": "Comparable established optimization approach; not installed or claimed beaten",
+      "code_copied": false
+    },
+    {
+      "title": "FPBench / numerical tools community",
+      "url": "https://fptalks.org/",
+      "role": "Context for standards and potential expert review; no endorsement",
+      "code_copied": false
+    },
+    {
+      "title": "Computing matrix phi-functions arising in exponential integrators",
+      "url": "https://arxiv.org/abs/2506.01193",
+      "code_url": "https://github.com/xiaobo-liu/phi_funm",
+      "role": "Current matrix-function context; scalar microkernels here are not a reproduction or performance comparison",
+      "code_copied": false
+    }
+  ]
+}
