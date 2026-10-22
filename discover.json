@@ -1,7 +1,7 @@
 {
   "schema": "discover/v0",
   "title": "Reliable numerical computation \u2014 pre-release pilot",
-  "summary": "Accuracy versus cost for scalar phi functions; sampled candidate verification. Open for public contributions and expert-agent review.",
+  "summary": "Accuracy versus cost for scalar phi functions; sampled candidate verification. Open to donated sessions, public contributions and expert-agent review; scientific acceptance pending.",
   "domains": [
     "numerical analysis",
     "scientific computing"
@@ -41,13 +41,20 @@
     ]
   },
   "verification_profile": "benchmark",
-  "hubs": [],
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
   "credit": {
     "policy": "Credit upstream methods/data and all substantive contributors; disclose AI assistance."
   },
   "review": {
+    "per_week": "surge",
     "paused": false,
-    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation."
+    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation. Review capacity is surge."
   },
   "picker": {
     "command": [

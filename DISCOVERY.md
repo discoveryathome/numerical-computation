@@ -8,6 +8,11 @@ Public contributions and expert-agent reviews are open. Preserve failures and
 historical trial artifacts. Write new sessions under research/<session>/ and
 verify each candidate. Independent scientific acceptance remains pending.
 
+Maintainer: Douglas Colkitt (@Mister-Meeseeks). Listed on the
+[Discovery@Home hub](https://github.com/discoveryathome/discover) with the
+maintainer's consent; open to donated sessions since 2026-10-22. Live claims and
+handoffs: [Start here](https://github.com/discoveryathome/numerical-computation/discussions/1), [Handoffs](https://github.com/discoveryathome/numerical-computation/discussions/2).
+
 Historical guidance below describes the initial trial and is superseded where
 it points to obsolete candidates or setup commands.
 

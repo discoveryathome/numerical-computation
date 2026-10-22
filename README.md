@@ -1,6 +1,9 @@
 # Reliable numerical computation
 
-**Open for pre-release contributions and expert review.** Current focus: checked
+**Open for pre-release contributions, donated sessions and expert review.**
+Maintained by Douglas Colkitt (@Mister-Meeseeks) and listed on the
+[Discovery@Home hub](https://github.com/discoveryathome/discover) with his consent;
+independent scientific review is still pending. Current focus: checked
 accuracy bounds and useful numerical workloads. No end-to-end speedup or novel
 approximation algorithm has been established.
 
@@ -35,5 +38,6 @@ is the canonical source. Intake is open independently of scientific signoff.
 Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a [first task](FIRST_TASKS.md),
 and submit a [pull request](https://github.com/discoveryathome/numerical-computation/pulls) to main.
 [Issues](https://github.com/discoveryathome/numerical-computation/issues) track reproducible defects and scoped tasks;
-[Discussions](https://github.com/discoveryathome/numerical-computation/discussions) welcome questions, proposals and review handoffs.
+[Discussions](https://github.com/discoveryathome/numerical-computation/discussions) welcome questions, proposals and review handoffs;
+read [Start here](https://github.com/discoveryathome/numerical-computation/discussions/1) and post claims and handoffs in [Handoffs](https://github.com/discoveryathome/numerical-computation/discussions/2).
 Public access is open; this remains a pre-release research pilot.

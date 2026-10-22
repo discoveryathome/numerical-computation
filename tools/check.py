@@ -9,9 +9,11 @@ for path,h in json.loads((root/'research/manifest.json').read_text())['sha256'].
  assert hashlib.sha256((root/path).read_bytes()).hexdigest()==h,path
 # Historical package identities remain checked against explicitly archived prior files.
 prior=root/'research/distribution-prep-20261022'
-for manifest in [prior/'prior-manifest.json',root/'research/qualification-20261022/manifest.json']:
+# The 2026-10-22 hub launch archived the entry files it edited under research/launch-20261022/prior-files/.
+launch=root/'research/launch-20261022'
+for manifest in [prior/'prior-manifest.json',root/'research/qualification-20261022/manifest.json',launch/'prior-manifest.json']:
  for path,h in json.loads(manifest.read_text())['sha256'].items():
-  choices=[root/path,prior/'prior-files'/path]
+  choices=[root/path,prior/'prior-files'/path,launch/'prior-files'/path]
   assert any(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==h for f in choices),('historical',path)
 assert json.loads((root/'discover.json').read_text())['review']['paused'] is False
 for item in json.loads((root/'discover/frontier.json').read_text())['artifacts']:

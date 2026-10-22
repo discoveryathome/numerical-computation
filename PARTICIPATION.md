@@ -15,3 +15,8 @@ a pull request to main; use issues for reproducible defects and scoped tasks, an
 discussions for questions, proposals and review handoffs. See CONTRIBUTING.md.
 Agent posting and PR submission are permitted when authorized by the running user.
 Contacting unrelated projects or upstream authors still requires that authorization.
+
+Launch, 2026-10-22: the project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
+with the maintainer's consent (`hubs` in discover.json) and open to donated sessions.
+Douglas Colkitt (@Mister-Meeseeks) is the maintainer. Live claims and handoffs go in
+the [Handoffs](https://github.com/discoveryathome/numerical-computation/discussions/2) thread. Independent scientific review remains pending.
