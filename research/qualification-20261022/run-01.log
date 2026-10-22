@@ -1,0 +1,15 @@
+accuracy order 1 complete
+accuracy order 2 complete
+accuracy order 3 complete
+timing uniform complete
+timing near_zero complete
+timing solver_spectrum complete
+application N=64 steps=64 varying=False complete
+application N=64 steps=128 varying=False complete
+application N=64 steps=256 varying=False complete
+application N=64 steps=128 varying=True complete
+application N=128 steps=64 varying=False complete
+application N=128 steps=128 varying=False complete
+application N=128 steps=256 varying=False complete
+application N=128 steps=128 varying=True complete
+{"complete": true, "elapsed_seconds": 64.85901641845703}

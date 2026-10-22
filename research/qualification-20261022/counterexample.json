@@ -1,0 +1,21 @@
+{
+  "input_hex": "0x1.030438d414148p-1",
+  "order": 3,
+  "inherited_mode": 30,
+  "frozen_selection_sha256": "febd739e37efc3110dbc5932f481f412172c043eb7beeaf867193a64ec4c4129",
+  "outputs_hex": {
+    "stable": "0x1.85446912a1af9p-3",
+    "inherited": "0x1.85446912a1b0bp-3",
+    "piecewise": "0x1.85446912a1af9p-3",
+    "scipy": "0x1.85446912a1af9p-3"
+  },
+  "reference_hex": {
+    "mpmath_100_dps": "0x1.85446912a1af9p-3",
+    "mpmath_200_dps": "0x1.85446912a1af9p-3",
+    "decimal_110_digits": "0x1.85446912a1af9p-3",
+    "exact_rational_lower_rounded": "0x1.85446912a1af9p-3",
+    "exact_rational_upper_rounded": "0x1.85446912a1af9p-3"
+  },
+  "inherited_integer_ulp": 18,
+  "disposition": "Inherited phi3 fails the 16-ULP qualification gate. Preserve its historical results; do not promote this candidate under that gate."
+}

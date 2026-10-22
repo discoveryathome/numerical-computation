@@ -1,0 +1,28 @@
+{
+  "scope": "Supplemental qualification package; original manifest and every original artifact remain unchanged. Native builds and virtual environments excluded. verification.log is a replayable check log, excluded from this inventory.",
+  "base_commit": "8620d5f3fe358dd5592d4c990b8e5485483620c7",
+  "original_manifest_sha256": "e93ab79e198976df5278adf3a06cc2a8e44fccad7a124f8078243037c56e9b03",
+  "sha256": {
+    "QUALIFICATION.md": "32ae4b308b25f1d1abab384397a33243c43bac152e12aeb76545086e213fb209",
+    "research/qualification-20261022/ASSESSMENT.md": "a86a423b4429510a9e73e117e5ed80bc93a8c40511e78b0141adc7226d45eae2",
+    "research/qualification-20261022/BOUND.md": "209f8a346d88930ec4f52f0155ebd68f29d93589ca20ffb1c4e556cd5a17661c",
+    "research/qualification-20261022/PROTOCOL.md": "1abcd7e9a263a5114376d9ffab26cb79661ee4dfb3a234b492229ac173280518",
+    "research/qualification-20261022/bounds.py": "7572b5f99141ad1e0b3c092d5c95b0556d734ce9f987f6dadb6d37453d628c81",
+    "research/qualification-20261022/certificate.json": "7432899b81f5789bb2522bde22460637251f931d459a3e700a156f18121c7bec",
+    "research/qualification-20261022/check.py": "8593ebce61b55a4996cd5c14904fee6ad2d850f43be62f735746b4e840e60e1c",
+    "research/qualification-20261022/counterexample.json": "ec966f14aed03623047eac1d87d28009549abc478f62c9a2d1f4f56cb995c287",
+    "research/qualification-20261022/installed-packages.txt": "9147ab61dc9137ddeb77a60a9dbb000817f520e22a6db43434e48bbbf2325f89",
+    "research/qualification-20261022/protocol.sha256": "00922acd430e2c47e870c0ebe1d6bb5497ea386fb7d05ad0906c19b2c7364e3c",
+    "research/qualification-20261022/qualified.c": "09ce7a06b95bd8530d822c69d8422d5e290f25a92019c2290617d6e3753f28dd",
+    "research/qualification-20261022/qualify.py": "f489aa47050822ab0f13c506dd13cddcda1789d100f261fb228bd5411fac2114",
+    "research/qualification-20261022/requirements.txt": "e5f921f39e461168504ff990ef8df900a3a4b80fb39aadcb0bd766f8bfe68a53",
+    "research/qualification-20261022/run-01/accuracy.json": "5a422519595ca36f3071861dbec0e135e3cb84020ea5ed8c2b0d02266cf2f03e",
+    "research/qualification-20261022/run-01/inputs.npy": "422deb715de44cf0b9ee46bbd89144037bf0e04814607fc87abc0a5f898653f7",
+    "research/qualification-20261022/run-01/references.npy": "00d077eaf131b1c2ce7536d7b40649a5a32d61cb7c3eb6f670a2d24d7a138451",
+    "research/qualification-20261022/run-01/results.json": "833abed9f4040c49353959a004890cebb36dfc3e93a135dd90b298c59c0915cd",
+    "research/qualification-20261022/run-01.log": "5fbfeca30d4326b62ada5e25e4b86813e29c8245029f785ffd3de003d5272a67",
+    "research/qualification-20261022/setup.sh": "2505039b94e9502e6b3d170a77d671bc52c0f10b6f7cb25a796c274574380c63",
+    "research/qualification-20261022/test_qualification.py": "ad984dbc95c142d2c4d96f6a7a53ca69ec18305aa4f9023399bed3a03203c6fa",
+    "research/qualification-20261022/tests.log": "32d2537f2b1799b088be6a0fc658ad99a42387623e012c867323fe941b49195f"
+  }
+}

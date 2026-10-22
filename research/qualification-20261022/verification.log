@@ -1,0 +1,8 @@
+Checked 5 packages in 23ms
+{"certificate_verified": true, "max_integer_ulp_bound": 4, "coefficient_table_bytes": 6120, "compiler_command": ["clang", "-O3", "-std=c11", "-fno-fast-math", "-ffp-contract=off", "-shared", "-fPIC", "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/numerical-computation/research/qualification-20261022/qualified.c", "-o", "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/numerical-computation/build/qualified.dylib"]}
+........                                                                 [100%]
+8 passed in 1.14s
+PASS: schemas and frozen artifacts; intake open; scientific review pending
+.........                                                                [100%]
+9 passed in 4.89s
+PASS: qualification artifacts; inherited phi3 disqualified; independent review pending; intake open

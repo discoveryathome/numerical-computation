@@ -1,0 +1,217 @@
+{
+  "kind": "author-run qualification, independent review pending",
+  "seed": 2026102231,
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.11 (main, Aug 18 2025, 19:02:39) [Clang 20.1.4 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.0",
+    "mpmath": "1.4.1",
+    "load_start": [
+      42.69580078125,
+      27.96875,
+      20.736328125
+    ],
+    "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+    "flags": "-O3 -std=c11 -fno-fast-math -ffp-contract=off -shared -fPIC"
+  },
+  "source_sha256": {
+    "research/qualification-20261022/PROTOCOL.md": "1abcd7e9a263a5114376d9ffab26cb79661ee4dfb3a234b492229ac173280518",
+    "research/qualification-20261022/bounds.py": "7572b5f99141ad1e0b3c092d5c95b0556d734ce9f987f6dadb6d37453d628c81",
+    "research/qualification-20261022/qualified.c": "09ce7a06b95bd8530d822c69d8422d5e290f25a92019c2290617d6e3753f28dd",
+    "research/qualification-20261022/certificate.json": "7432899b81f5789bb2522bde22460637251f931d459a3e700a156f18121c7bec",
+    "research/qualification-20261022/qualify.py": "f489aa47050822ab0f13c506dd13cddcda1789d100f261fb228bd5411fac2114",
+    "src/kernels.c": "4c645bcad549122cd67c5468cd2d8a07aacd4577bb60d099c561c5b0df52d602",
+    "src/trial.py": "ecbd9c83474c3fa8cb0f0fe91a0f4b269b7e814950ed9af6db8716297d0a4b29"
+  },
+  "accuracy": {
+    "seed": 2026102231,
+    "points_per_order": 12958,
+    "input_sha256_le_f64": "d82a6d9885bbfc4f176d039ee9e831ab3cd3c75df414f375a9a59cf31a89902f",
+    "reference_values": 38874,
+    "oracle_disagreements": [],
+    "exact_rational_reference_checks": 192,
+    "rows": [
+      {
+        "order": 1,
+        "method": "stable",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 1,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.2a9aa859a2cb0p+1",
+        "worst_valid_output_hex": "0x1.feacacbf7095ep+1",
+        "reference_hex": "0x1.feacacbf7095fp+1"
+      },
+      {
+        "order": 1,
+        "method": "inherited",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 1,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.2a9aa859a2cb0p+1",
+        "worst_valid_output_hex": "0x1.feacacbf7095ep+1",
+        "reference_hex": "0x1.feacacbf7095fp+1"
+      },
+      {
+        "order": 1,
+        "method": "piecewise",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 2,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.296c3d2e7c68cp+1",
+        "worst_valid_output_hex": "0x1.fb7c9d05c092ap+1",
+        "reference_hex": "0x1.fb7c9d05c092cp+1"
+      },
+      {
+        "order": 1,
+        "method": "direct_expm1",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 1,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.2a9aa859a2cb0p+1",
+        "worst_valid_output_hex": "0x1.feacacbf7095ep+1",
+        "reference_hex": "0x1.feacacbf7095fp+1"
+      },
+      {
+        "order": 1,
+        "method": "naive",
+        "invalid_count": 2063,
+        "max_ulp_finite_positive": 4375775495636460,
+        "over_16_ulp": 2411,
+        "worst_valid_input_hex": "0x1.03af6e7790e99p-53",
+        "worst_valid_output_hex": "0x1.f8bbea008c5ecp+0",
+        "reference_hex": "0x1.0000000000000p+0"
+      },
+      {
+        "order": 1,
+        "method": "scipy",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 1,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.2a9aa859a2cb0p+1",
+        "worst_valid_output_hex": "0x1.feacacbf7095ep+1",
+        "reference_hex": "0x1.feacacbf7095fp+1"
+      },
+      {
+        "order": 2,
+        "method": "stable",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 3,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.9c0ddc01b0908p+0",
+        "worst_valid_output_hex": "0x1.d88d3b2aa5ce9p-1",
+        "reference_hex": "0x1.d88d3b2aa5cecp-1"
+      },
+      {
+        "order": 2,
+        "method": "inherited",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 6,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "-0x1.2ad90fae00aa0p-2",
+        "worst_valid_output_hex": "0x1.d19fb4153f2d6p-2",
+        "reference_hex": "0x1.d19fb4153f2d0p-2"
+      },
+      {
+        "order": 2,
+        "method": "piecewise",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 1,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "-0x1.d4e8355fbf360p+1",
+        "worst_valid_output_hex": "0x1.9a5c04b50b142p-3",
+        "reference_hex": "0x1.9a5c04b50b141p-3"
+      },
+      {
+        "order": 2,
+        "method": "direct_expm1",
+        "invalid_count": 2065,
+        "max_ulp_finite_positive": 4337382228704837,
+        "over_16_ulp": 2567,
+        "worst_valid_input_hex": "0x1.6d6d16db06ed9p-53",
+        "worst_valid_output_hex": "0x1.f68d37eff3e45p-1",
+        "reference_hex": "0x1.0000000000000p-1"
+      },
+      {
+        "order": 2,
+        "method": "naive",
+        "invalid_count": 1624,
+        "max_ulp_finite_positive": 2421636403026414464,
+        "over_16_ulp": 3320,
+        "worst_valid_input_hex": "-0x1.b617a698b4b80p-538",
+        "worst_valid_output_hex": "0x1.b617a698b4b80p+536",
+        "reference_hex": "0x1.0000000000000p-1"
+      },
+      {
+        "order": 2,
+        "method": "scipy",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 6,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "-0x1.b02911ced1132p+1",
+        "worst_valid_output_hex": "0x1.b110eaac6d6afp-3",
+        "reference_hex": "0x1.b110eaac6d6a9p-3"
+      },
+      {
+        "order": 3,
+        "method": "stable",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 7,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.23fa2b3c4ee50p+0",
+        "worst_valid_output_hex": "0x1.d1e128796df85p-3",
+        "reference_hex": "0x1.d1e128796df7ep-3"
+      },
+      {
+        "order": 3,
+        "method": "inherited",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 18,
+        "over_16_ulp": 1,
+        "worst_valid_input_hex": "0x1.030438d414148p-1",
+        "worst_valid_output_hex": "0x1.85446912a1b0bp-3",
+        "reference_hex": "0x1.85446912a1af9p-3"
+      },
+      {
+        "order": 3,
+        "method": "piecewise",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 1,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.9b0b332f5e8c0p+0",
+        "worst_valid_output_hex": "0x1.0cbd5a0935c18p-2",
+        "reference_hex": "0x1.0cbd5a0935c17p-2"
+      },
+      {
+        "order": 3,
+        "method": "direct_expm1",
+        "invalid_count": 1797,
+        "max_ulp_finite_positive": 1617336847429368228,
+        "over_16_ulp": 3791,
+        "worst_valid_input_hex": "-0x1.b4976720280aep-359",
+        "worst_valid_output_hex": "0x1.744a08682cef9p+356",
+        "reference_hex": "0x1.5555555555555p-3"
+      },
+      {
+        "order": 3,
+        "method": "naive",
+        "invalid_count": 2094,
+        "max_ulp_finite_positive": 488888881466478058,
+        "over_16_ulp": 4247,
+        "worst_valid_input_hex": "0x1.03af6e7790e99p-53",
+        "worst_valid_output_hex": "0x1.e372e47c7e340p+105",
+        "reference_hex": "0x1.5555555555556p-3"
+      },
+      {
+        "order": 3,
+        "method": "scipy",
+        "invalid_count": 0,
+        "max_ulp_finite_positive": 7,
+        "over_16_ulp": 0,
+        "worst_valid_input_hex": "0x1.506fee573d822p+1",
+        "worst_valid_output_hex": "0x1.7db94865720bcp-2",
+        "reference_hex": "0x1.7db94865720c3p-2"
+      }
+    ]
+  }
+}
